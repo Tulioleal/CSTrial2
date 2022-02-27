@@ -22,6 +22,7 @@ exports.getPorcentile = functions.https.onRequest(async (req, res) => {
                           .get();
 
   let docsFB = snapshot.docs
+  // let docsFB = undefined
   let docsMock:Team[] = DATA
   let result:Team[] = []
 
